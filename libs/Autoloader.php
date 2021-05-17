@@ -101,7 +101,7 @@ class Smarty_Autoloader
     {
         $_class = strtolower($class);
         if ($class[ 0 ] !== 'S' || strpos($class, 'Smarty') !== 0) {
-            $file = self::$SMARTY_SYSPLUGINS_DIR . $_class . '.php';
+            $file = self::$SMARTY_CLASS_DIR . $_class . '.class.php';
             if (is_file($file)) {
                 include $file;
             }
