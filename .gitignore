@@ -11,3 +11,5 @@ utilies/*.php
 phpunit*
 vendor/*
 composer.lock
+
+templates_c

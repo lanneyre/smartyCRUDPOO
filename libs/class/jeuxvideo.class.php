@@ -2,6 +2,7 @@
 
 class Jeuxvideo{
 
+    // les noms des attributs correspondent a mes champs de tables
     public $ID;
     public $nom;
     public $realisateur;
@@ -15,7 +16,6 @@ class Jeuxvideo{
         $obj->annee = $annee;
         $obj->ID = $ID;
         $obj->plateforme = $plateforme;
-
         return $obj;
     }
 
@@ -24,8 +24,7 @@ class Jeuxvideo{
             return database::update($this);
         }else {
             return database::save($this);
-        }
-        
+        }  
     }
 
     public static function getAll(){
